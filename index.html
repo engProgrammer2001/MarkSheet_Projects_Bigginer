@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Practical</title>
+    <script src="script.js"></script>
+    <style>
+        h1 {
+            color: red;
+            font-size: 48px;
+            text-align: center;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label{
+            font-size: 30px;
+            color: rgb(9, 156, 4);
+        }
+        input{
+            font-size: 45px;  
+        }
+        #btn{
+            color: red;
+            background-color: gold;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Put Here Your Marks and Get Marksheet</h1>
+    <div class="container">
+        <form name="form1">
+            <label for="">Enter Student Name:</label><br>
+            <input type="text" id="std" /> <br>
+            <label for="">Enter Hindi Marks:</label><br>
+            <input type="number" id="sub1" /> <br>
+            <label for="">Enter English Marks:</label><br>
+            <input type="number" id="sub2" /> <br>
+            <label for="">Enter Maths Marks:</label><br>
+            <input type="number" id="sub3" /> <br>
+            <label for="">Enter Science Marks:</label><br>
+            <input type="number" id="sub4" /> <br> <br>
+            <input type="button" onclick="printSum()" value="Calculate" id="btn"/>
+        </form>
+    </div>
+</body>
+
+</html>
